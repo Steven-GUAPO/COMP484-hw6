@@ -1,0 +1,235 @@
+/*  COLOR PALETTE
+
+   --color-bg:         #F5F5F5   light grey page background
+   --color-header:     #1A3C5E   navy blue header
+   --color-footer:     #1A3C5E   navy blue footer
+   --color-work:       #EAF2FB   light blue — work experience
+   --color-education:  #EAF7F0   light green — education
+   --color-projects:   #FDF6EC   warm cream — projects
+   --color-accent:     #1A3C5E   navy — headings and links
+   --color-text:       #222222   dark body text
+   --color-muted:      #666666   grey secondary text
+   --color-border:     #CCCCCC   light borders */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/*background color - body */
+body {
+    background-color: #F5F5F5;
+    color: #222222;
+
+    /* STEP 5e — body font */
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+
+    max-width: 860px;
+    margin: 0 auto;
+}
+
+/*links*/
+a {
+    color: #1A3C5E;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #2a5c8e;
+}
+
+/* Heading fonts and sizes */
+
+h1 {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 2.6rem;         
+    color: #ffffff;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+h2 {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.4rem;         
+    color: #1A3C5E;
+    margin-bottom: 14px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #1A3C5E;
+}
+
+/* job/school/project titles */
+h3 {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-size: 1.05rem;        
+    color: #222222;
+    margin-top: 20px;
+    margin-bottom: 2px;
+}
+
+p {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-weight: 400;       
+    margin-bottom: 6px;
+}
+
+ul {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
+
+li {
+    font-family: 'Source Sans 3', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 0.94rem;
+    margin-bottom: 4px;
+    color: #333333;
+    line-height: 1.65;
+}
+
+/* HEADER background color */
+
+header {
+    background-color: #1A3C5E;
+    padding: 36px 40px;
+    text-align: center;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #ffffff;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 16px auto;
+}
+
+
+header h2 {
+    font-size: 1rem;        
+    color: #B8D4EF;
+    border-bottom: none;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+}
+
+
+header p {
+    font-size: 0.95rem;
+    font-weight: 300;         
+    color: #cce0f5;
+    max-width: 580px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* white background */
+main {
+    background-color: #ffffff;
+    padding: 32px 40px;
+}
+
+
+section {
+    margin-bottom: 32px;
+    padding: 24px;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+/* Section background colors */
+
+/* work experience background */
+section.work-experience {
+    background-color: #EAF2FB;
+    border-left: 4px solid #1A3C5E;
+}
+
+/* education background */
+section.education {
+    background-color: #EAF7F0;
+    border-left: 4px solid #2E8B57;
+}
+
+
+section.education h2 {
+    color: #2E8B57;
+    border-bottom-color: #2E8B57;
+}
+
+
+section.projects {
+    background-color: #FDF6EC;
+    border-left: 4px solid #C07828;
+}
+
+
+section.projects h2 {
+    color: #C07828;
+    border-bottom-color: #C07828;
+}
+
+/* HELPER CLASSES */
+.company,
+.degree,
+.tech {
+    font-size: 0.88rem;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 6px;
+}
+
+.date {
+    font-size: 0.84rem;
+    font-weight: 300;          
+    color: #888888;
+    margin-bottom: 8px;
+}
+
+/* Footer background color*/
+footer {
+    background-color: #1A3C5E;
+    padding: 28px 40px;
+    text-align: center;
+}
+
+
+footer h2 {
+    font-family: 'Lora', Georgia, serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    border-bottom: none;
+    margin-bottom: 16px;
+}
+
+
+.footer-links {
+    margin-bottom: 14px;
+}
+
+.footer-links a {
+    color: #9ec8f0;
+    font-size: 0.88rem;
+    font-weight: 400;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+
+footer p {
+    font-size: 0.8rem;
+    font-weight: 300;
+    color: #8ab4d4;
+    margin-bottom: 0;
+}
